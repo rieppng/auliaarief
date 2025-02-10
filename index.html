@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Tugas & Profil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Website Mahasiswa</h1>
+        <nav>
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#tugas">Tugas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="profil">
+        <h2>Profil Mahasiswa</h2>
+        <form id="profilForm">
+            <label>Nama:</label>
+            <input type="text" id="nama" required><br>
+
+            <label>NIM:</label>
+            <input type="text" id="nim" required><br>
+
+            <label>Kelas:</label>
+            <input type="text" id="kelas" required><br>
+
+            <label>Mata Kuliah:</label>
+            <input type="text" id="mataKuliah" required><br>
+
+            <label>Dosen Pengampu:</label>
+            <input type="text" id="dosen" required><br>
+
+            <button type="button" onclick="simpanProfil()">Simpan Profil</button>
+        </form>
+
+        <div id="profilDisplay"></div>
+    </section>
+
+    <section id="tugas">
+        <h2>Upload Tugas</h2>
+        <input type="file" id="fileInput" multiple>
+        <button onclick="uploadFile()">Upload</button>
+
+        <h3>Daftar Tugas</h3>
+        <ul id="fileList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
