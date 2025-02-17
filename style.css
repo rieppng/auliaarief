@@ -1,95 +1,73 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
+
+} 
+
+body {
+    background-color: wheat;
+    flex-direction: column;
+    display: flex;
 }
 
-/* Header */
-header {
-    background-color: #0077b6;
-    color: white;
-    padding: 20px;
+/*navbar*/
+.container-navbar {
+    background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}   
+
+.ul-navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 150px;
+    padding: 0px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.li-navbar {
+    background-color: rgba(240, 248, 255, 0);
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Section */
-section {
-    padding: 20px;
-    max-width: 600px;
-    margin: auto;
-    background: #f1f1f1;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-/* Form */
-form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #0077b6;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #005f86;
-}
-
-/* File List */
-#fileList {
-    list-style: none;
-    padding: 0;
-    margin-top: 15px;
-}
-
-#fileList li {
-    background: white;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#fileList li button {
-    background-color: red;
+/* Menghapus gaya default pada link */
+.ul-navbar a {
+    text-decoration: none;  /* Menghapus garis bawah pada link */
+    color: black;           /* Mengubah warna teks menjadi hitam (atau warna lain yang Anda inginkan) */
     padding: 5px 10px;
+}
+
+/* Jika ingin memberikan hover effect pada link */
+.ul-navbar a:hover {
+    color: #333;  /* Mengubah warna teks ketika pengguna mengarahkan mouse ke tautan */
+    border-bottom: 2px solid #333; 
+}
+
+
+/*content*/
+.container-content {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.p-content {
+    text-align: center;
+
+}
+
+/*footer*/
+.container-footer {
+    background-color: rgba(255, 255, 255, 0.277);
+    padding: 3px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.text-footer {
+    font-size: smaller;
+    text-align: center;
+    text-shadow: 50%;
 }
